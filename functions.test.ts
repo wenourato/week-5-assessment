@@ -7,10 +7,18 @@ test('we should get an array back', () => {
     )
   })
 
-  test('array matches', () => {
-    shuffleArray.forEach((shuffleArray) => {
-      expect(shuffleArray).toMatchSnapshot({
-        createdAt: expect.any([])
-      });
-    });
-  });
+//   test('array matches', () => {
+//     shuffleArray.forEach((shuffleArray) => {
+//       expect(shuffleArray).toMatchSnapshot({
+//         createdAt: expect.any([])
+//       });
+//     });
+//   });
+
+// test('Should pass array  length', () => {
+//     const result = shuffleArray()
+    
+//     expect(result).toBeInstanceOf()
+    
+
+// })
