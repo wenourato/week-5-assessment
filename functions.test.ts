@@ -1,11 +1,19 @@
 const {shuffleArray} = require('./utils')
 
+const Arr = [2,4,6,8]
 
-test('we should get an array back', () => {
-    expect(shuffleArray).toEqual(
-      expect.arrayContaining([])
-    )
-  })
+describe('shuffleArray should', () => {
+    test('Make sure that shuffleArray returns an array', () => {
+        expect(Array.isArray(shuffleArray(Arr))).toBe(true);
+        
+    })
+
+    it('should return an array of the same length as the argument sent in', () => {
+        expect(shuffleArray(Arr)).toHaveLength(4)
+    })
+
+
+
 
 //   test('array matches', () => {
 //     shuffleArray.forEach((shuffleArray) => {
@@ -21,4 +29,4 @@ test('we should get an array back', () => {
 //     expect(result).toBeInstanceOf()
     
 
-// })
+})
